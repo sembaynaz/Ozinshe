@@ -1,0 +1,6 @@
+framework module Pods_Ozinshe_OzinsheUITests {
+  umbrella header "Pods-Ozinshe-OzinsheUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
