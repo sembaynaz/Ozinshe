@@ -63,9 +63,13 @@ class OnboardingViewController: UIViewController {
         
         navigationController?.show(signinVC, sender: self)
     }
+    
+    @IBAction func pageControlTouched(_ sender: UIPageControl) {
+        print(pageControl.numberOfPages)
+    }
 }
 
-extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIScrollViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
@@ -90,6 +94,4 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         currentPage = Int(scrollView.contentOffset.x / width)
         pageControl.currentPage = currentPage
     }
-    
-    
 }
