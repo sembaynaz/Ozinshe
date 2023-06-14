@@ -9,13 +9,13 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
-    @IBOutlet weak var pageController: UIPageControl!
-    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var skipButton: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     var currentPage = 0 {
         didSet {
-            pageController.currentPage = currentPage
+            pageControl.currentPage = currentPage
             if currentPage != slidesArray.count - 1 {
                 skipButton.isHidden = false
                 nextButton.isHidden = true
@@ -38,32 +38,45 @@ class OnboardingViewController: UIViewController {
         
         nextButton.layer.cornerRadius = 8
         skipButton.layer.cornerRadius = 8
+        
+        configurePageControl()
+    }
+    
+    private func configurePageControl() {
+        pageControl.subviews.forEach {
+            $0.transform = CGAffineTransform(scaleX: 1/1.1, y: 1/1.1)
+        }
+        for i in 0..<slidesArray.count {
+            pageControl.setIndicatorImage(UIImage(named: "Indicator"), forPage: i)
+            pageControl.setCurrentPageIndicatorImage(UIImage(named: "ActiveIndicator"), forPage: i)
+        }
     }
     
     @IBAction func skipButtonTouched(_ sender: Any) {
+        let signinVC = storyboard?.instantiateViewController(withIdentifier: "SigninViewController") as! SigninViewController
         
+        navigationController?.show(signinVC, sender: self)
     }
     
     @IBAction func nextButtonTouched(_ sender: Any) {
+        let signinVC = storyboard?.instantiateViewController(withIdentifier: "SigninViewController") as! SigninViewController
         
+        navigationController?.show(signinVC, sender: self)
     }
-    
-    @IBAction func pagecontroller(_ sender: Any) {
-
-    }
-    
-    
 }
 
 extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return slidesArray.count
+        return 3
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCollectionViewCell", for: indexPath) as! OnboardingCollectionViewCell
 
-        cell.setup(slidesArray[indexPath.row])
+        let index = indexPath.row
+        
+        cell.setup(slidesArray[index])
 
         return cell
     }
@@ -75,6 +88,8 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let width = scrollView.frame.width
         currentPage = Int(scrollView.contentOffset.x / width)
-        pageController.currentPage = currentPage
+        pageControl.currentPage = currentPage
     }
+    
+    
 }

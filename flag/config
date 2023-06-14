@@ -6,5 +6,8 @@
 	ignorecase = true
 	precomposeunicode = true
 [remote "origin"]
-	url = https://github.com/sembaynaz/Ozinshe
+	url = https://github.com/sembaynaz/Ozinshe.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "dev"]
+	remote = origin
+	merge = refs/heads/dev

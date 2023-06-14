@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dsg-S9-f12">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
@@ -82,23 +82,7 @@
                                 <rect key="frame" x="138.66666666666666" y="640" width="116" height="26"/>
                                 <color key="pageIndicatorTintColor" red="0.81960784313725488" green="0.83529411764705885" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="currentPageIndicatorTintColor" red="0.70196078431372544" green="0.46274509803921571" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <connections>
-                                    <action selector="pagecontroller:" destination="BYZ-38-t0r" eventType="valueChanged" id="bDV-6K-Kap"/>
-                                </connections>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHH-7x-qhw">
-                                <rect key="frame" x="299" y="60" width="70" height="30"/>
-                                <color key="backgroundColor" red="0.97647058823529409" green="0.98039215686274506" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="BoM-EX-CpX"/>
-                                </constraints>
-                                <color key="tintColor" red="0.066666666666666666" green="0.094117647058823528" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Өткізу"/>
-                                <connections>
-                                    <action selector="skipButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fLs-NC-QaD"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3g-8i-9bN">
                                 <rect key="frame" x="24" y="690" width="345" height="56"/>
                                 <color key="backgroundColor" red="0.49411764705882355" green="0.1764705882352941" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -109,7 +93,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Әрі қарай"/>
                                 <connections>
-                                    <action selector="nextButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qfi-4y-va7"/>
+                                    <action selector="nextButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GHp-Eo-uHd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -121,22 +105,82 @@
                             <constraint firstItem="Kzo-sn-Xg4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="I30-jF-QfN"/>
                             <constraint firstItem="Kzo-sn-Xg4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LfI-U7-dGL"/>
                             <constraint firstItem="d3g-8i-9bN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="N7Z-x0-6hQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YHH-7x-qhw" secondAttribute="trailing" constant="24" id="cW2-Ro-nBf"/>
-                            <constraint firstItem="YHH-7x-qhw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="eqV-Qx-8f8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d3g-8i-9bN" secondAttribute="bottom" constant="72" id="g1M-II-U1L"/>
                             <constraint firstItem="OoV-QK-7l6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="md0-1m-YD8"/>
                             <constraint firstItem="Kzo-sn-Xg4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nNd-f2-Crt"/>
                             <constraint firstItem="OoV-QK-7l6" firstAttribute="top" secondItem="Kzo-sn-Xg4" secondAttribute="bottom" id="wFH-yz-1h6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="JjX-uL-Qlc">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="FIw-CJ-iob">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="yZo-qg-rxY">
+                                <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97647058823529409" green="0.98039215686274506" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.066666666666666666" green="0.094117647058823528" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Өткізу"/>
+                                <connections>
+                                    <action selector="skipButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zvq-aZ-OKV"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="Kzo-sn-Xg4" id="GMN-ht-ofq"/>
                         <outlet property="nextButton" destination="d3g-8i-9bN" id="hhn-Mw-kS2"/>
-                        <outlet property="pageController" destination="OoV-QK-7l6" id="cgf-eu-cS8"/>
-                        <outlet property="skipButton" destination="YHH-7x-qhw" id="CK1-Yd-Lj2"/>
+                        <outlet property="pageControl" destination="OoV-QK-7l6" id="8nh-6x-wO6"/>
+                        <outlet property="skipButton" destination="yZo-qg-rxY" id="R5U-p4-aMh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
+        </scene>
+        <!--Signin View Controller-->
+        <scene sceneID="JIh-4y-8hP">
+            <objects>
+                <viewController storyboardIdentifier="SigninViewController" id="b4Z-YT-d7F" customClass="SigninViewController" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4hd-ig-pMW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сәлем" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6OJ-ee-Guz">
+                                <rect key="frame" x="24" y="75" width="345" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="scA-1P-kfL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6OJ-ee-Guz" firstAttribute="leading" secondItem="scA-1P-kfL" secondAttribute="leading" constant="24" id="CUb-7z-wrI"/>
+                            <constraint firstItem="6OJ-ee-Guz" firstAttribute="top" secondItem="scA-1P-kfL" secondAttribute="top" constant="16" id="KrQ-zy-Bwo"/>
+                            <constraint firstItem="scA-1P-kfL" firstAttribute="trailing" secondItem="6OJ-ee-Guz" secondAttribute="trailing" constant="24" id="P45-eQ-J1Y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DOH-Iy-vPT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CzZ-hE-RQ2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1823.6641221374045" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cTg-d6-rW1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dsg-S9-f12" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dFk-Bm-bHl">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NI5-yl-nqs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JHv-u3-tUI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
