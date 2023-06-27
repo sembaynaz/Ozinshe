@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class Storage {
+    public var accessToken: String = ""
+    
+    static let sharedInstance = Storage()
+}

@@ -6,3 +6,5 @@ de61ddbc6e938207b4520378b565ba81aad46d90 de61ddbc6e938207b4520378b565ba81aad46d9
 de61ddbc6e938207b4520378b565ba81aad46d90 de61ddbc6e938207b4520378b565ba81aad46d90 Naz <nazerke.sembay11@mail.ru> 1686737035 +0600	checkout: moving from dev to main
 de61ddbc6e938207b4520378b565ba81aad46d90 cac77af0c0b0494533b92a662a730c35a5878463 Naz <nazerke.sembay11@mail.ru> 1686737120 +0600	commit: Init
 cac77af0c0b0494533b92a662a730c35a5878463 8f72ced278e618c268a4b8d908f465664ffcf89d Naz <nazerke.sembay11@mail.ru> 1686767759 +0600	commit: Sign in and sign up designed
+8f72ced278e618c268a4b8d908f465664ffcf89d 31ee3520708b6f08440b02a140d880f93f50fbb7 Naz <nazerke.sembay11@mail.ru> 1686931123 +0600	commit: sign in sign up added to storyboard
+31ee3520708b6f08440b02a140d880f93f50fbb7 62c20c7d10822558dc481c2f4f7c68710a1d95ab Naz <nazerke.sembay11@mail.ru> 1687859400 +0600	commit: backend added

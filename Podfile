@@ -9,6 +9,7 @@ target 'Ozinshe' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SDWebImage'
+  pod 'SVProgressHUD'
 
   target 'OzinsheTests' do
     inherit! :search_paths

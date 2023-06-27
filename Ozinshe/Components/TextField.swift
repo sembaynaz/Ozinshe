@@ -29,10 +29,9 @@ class TextField: UITextField {
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
         return bounds.inset(by: UIEdgeInsets(top: 0, left: 40, bottom: 0, right: 0))
     }
-    
 }
 
-extension TextField {
+extension TextField: UITextFieldDelegate {
     private func customize() {
         layer.cornerRadius = 12
         layer.borderWidth = 1
