@@ -28,7 +28,7 @@
 		6F805DB72A4D9059009BAEF4 /* SettingsCellWithSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F805DB62A4D9059009BAEF4 /* SettingsCellWithSwitch.swift */; };
 		6F805DB92A4DCA5C009BAEF4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F805DB82A4DCA5C009BAEF4 /* EditProfileViewController.swift */; };
 		6F805DBB2A4DCC0A009BAEF4 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F805DBA2A4DCC0A009BAEF4 /* LanguageViewController.swift */; };
-		6F805DBD2A4DCE0C009BAEF4 /* ProfileLogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F805DBC2A4DCE0C009BAEF4 /* ProfileLogoutViewController.swift */; };
+		6F805DBD2A4DCE0C009BAEF4 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F805DBC2A4DCE0C009BAEF4 /* LogoutViewController.swift */; };
 		6FB566E12A4F04A6008E0FB9 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB566E02A4F04A6008E0FB9 /* FavoriteTableViewController.swift */; };
 		6FB566E32A4F0591008E0FB9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB566E22A4F0591008E0FB9 /* Movie.swift */; };
 		6FE9FA7A2A337B0000044507 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE9FA792A337B0000044507 /* OnboardingViewController.swift */; };
@@ -90,7 +90,7 @@
 		6F805DB62A4D9059009BAEF4 /* SettingsCellWithSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCellWithSwitch.swift; sourceTree = "<group>"; };
 		6F805DB82A4DCA5C009BAEF4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		6F805DBA2A4DCC0A009BAEF4 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
-		6F805DBC2A4DCE0C009BAEF4 /* ProfileLogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLogoutViewController.swift; sourceTree = "<group>"; };
+		6F805DBC2A4DCE0C009BAEF4 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		6FB566E02A4F04A6008E0FB9 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		6FB566E22A4F0591008E0FB9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		6FE9FA792A337B0000044507 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +187,8 @@
 		6F63207D2A4AFEBF00316D11 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				6F805DBC2A4DCE0C009BAEF4 /* LogoutViewController.swift */,
+				6F805DB82A4DCA5C009BAEF4 /* EditProfileViewController.swift */,
 				6F805DBA2A4DCC0A009BAEF4 /* LanguageViewController.swift */,
 				6F63207E2A4AFEE600316D11 /* ProfileViewController.swift */,
 				6F6320802A4AFEFB00316D11 /* SettingsCellWithArrow.swift */,
@@ -269,8 +271,6 @@
 				6F10BACB2A39AD6D00E77E29 /* SigninViewController.swift */,
 				6FEEBA2A2A3B1E79000C8FD3 /* SignupViewController.swift */,
 				6FE9FA782A337AAB00044507 /* Onboarding */,
-				6F805DB82A4DCA5C009BAEF4 /* EditProfileViewController.swift */,
-				6F805DBC2A4DCE0C009BAEF4 /* ProfileLogoutViewController.swift */,
 				6FB566E02A4F04A6008E0FB9 /* FavoriteTableViewController.swift */,
 			);
 			path = ViewController;
@@ -579,7 +579,7 @@
 				6F6320812A4AFEFB00316D11 /* SettingsCellWithArrow.swift in Sources */,
 				6F10BACC2A39AD6D00E77E29 /* SigninViewController.swift in Sources */,
 				6FE9FA7A2A337B0000044507 /* OnboardingViewController.swift in Sources */,
-				6F805DBD2A4DCE0C009BAEF4 /* ProfileLogoutViewController.swift in Sources */,
+				6F805DBD2A4DCE0C009BAEF4 /* LogoutViewController.swift in Sources */,
 				6F6E10632A31038A00F2921E /* SceneDelegate.swift in Sources */,
 				6F805DB92A4DCA5C009BAEF4 /* EditProfileViewController.swift in Sources */,
 				6FB566E32A4F0591008E0FB9 /* Movie.swift in Sources */,

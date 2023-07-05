@@ -665,6 +665,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="rAd-rc-fBi">
                         <barButtonItem key="rightBarButtonItem" image="exit" style="plain" id="kPT-4M-4FA">
+                            <color key="tintColor" red="1" green="0.25098039215686274" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="exitButtonTouched:" destination="o9m-fd-SDY" id="BYE-i7-dn0"/>
                             </connections>
@@ -792,10 +793,10 @@
             </objects>
             <point key="canvasLocation" x="7414.5038167938928" y="1202.8169014084508"/>
         </scene>
-        <!--Profile Logout View Controller-->
+        <!--Logout View Controller-->
         <scene sceneID="aeU-2G-phw">
             <objects>
-                <viewController id="7uj-yq-t2f" customClass="ProfileLogoutViewController" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogoutViewController" id="7uj-yq-t2f" customClass="LogoutViewController" customModule="Ozinshe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zYw-cR-U3X">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -832,6 +833,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Иә, шығу"/>
+                                        <connections>
+                                            <action selector="logoutButtonTouched:" destination="7uj-yq-t2f" eventType="touchUpInside" id="syx-t4-cny"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tv3-GS-060">
                                         <rect key="frame" x="24" y="210" width="345" height="56"/>
@@ -841,6 +845,9 @@
                                         <color key="tintColor" red="0.32941176470588235" green="0.082352941176470587" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Жоқ"/>
+                                        <connections>
+                                            <action selector="notLogoutButtonTouched:" destination="7uj-yq-t2f" eventType="touchUpInside" id="3s5-Kz-Vhe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -870,6 +877,9 @@
                             <constraint firstItem="nWD-kj-NPN" firstAttribute="leading" secondItem="xP4-hI-JbY" secondAttribute="leading" id="uun-6f-lzJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="nWD-kj-NPN" id="9iy-sw-HPD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P1x-Lm-c9h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1039,6 +1049,35 @@
             <point key="canvasLocation" x="5132.06106870229" y="410.56338028169017"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="4P5-QV-Tyj">
+            <size key="intrinsicContentSize" width="58" height="32"/>
+        </designable>
+        <designable name="BSr-oA-1ck">
+            <size key="intrinsicContentSize" width="79.333333333333329" height="18.666666666666668"/>
+        </designable>
+        <designable name="BkM-Ox-0qk">
+            <size key="intrinsicContentSize" width="97" height="34.333333333333336"/>
+        </designable>
+        <designable name="G58-Vf-uqK">
+            <size key="intrinsicContentSize" width="133.66666666666666" height="17"/>
+        </designable>
+        <designable name="Myo-4q-57v">
+            <size key="intrinsicContentSize" width="32" height="32"/>
+        </designable>
+        <designable name="PEP-Dg-K9J">
+            <size key="intrinsicContentSize" width="79.333333333333329" height="18.666666666666668"/>
+        </designable>
+        <designable name="d3g-8i-9bN">
+            <size key="intrinsicContentSize" width="101.33333333333333" height="33.333333333333336"/>
+        </designable>
+        <designable name="uac-X3-aUf">
+            <size key="intrinsicContentSize" width="133.66666666666666" height="17"/>
+        </designable>
+        <designable name="zeT-r3-C8E">
+            <size key="intrinsicContentSize" width="133.66666666666666" height="17"/>
+        </designable>
+    </designables>
     <resources>
         <image name="Check" width="24" height="24"/>
         <image name="Home" width="40" height="40"/>

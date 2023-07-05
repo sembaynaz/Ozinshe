@@ -26,14 +26,7 @@ class ProfileViewController: UIViewController, LanguageProtocol {
     @IBOutlet weak var avatarImage: UIImageView!
     @IBOutlet weak var titleLabel: UINavigationItem!
     
-    var settingsItems: [SettingsItem] = [
-        SettingsItem(type: .arrow, title: "PERSONALDATA".localized(), subtitle: "Өңдеу"),
-        SettingsItem(type: .arrow, title: "CHANGEPASSWORD".localized()),
-        SettingsItem(type: .arrow, title: "LANGUAGE".localized(), subtitle: "CURRENTLANG".localized()),
-        SettingsItem(type: .arrow, title: "RULES".localized(), subtitle: "Өңдеу"),
-        SettingsItem(type: .option, title: "NOTIFICATION".localized()),
-        SettingsItem(type: .option, title: "DARKMODE".localized()),
-    ]
+    var settingsItems: [SettingsItem] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         tableview.dataSource = self
@@ -46,7 +39,7 @@ class ProfileViewController: UIViewController, LanguageProtocol {
     }
 
     @IBAction func exitButtonTouched(_ sender: Any) {
-        let exitVC = storyboard?.instantiateViewController(withIdentifier: "ExitViewController") as! ProfileLogoutViewController
+        let exitVC = storyboard?.instantiateViewController(withIdentifier: "LogoutViewController") as! LogoutViewController
         
         exitVC.modalPresentationStyle = .overFullScreen
         self.present(exitVC, animated: true)
@@ -54,18 +47,19 @@ class ProfileViewController: UIViewController, LanguageProtocol {
     
     func languageDidChange() {
         configureViews()
-        settingsItems = [
-        SettingsItem(type: .arrow, title: "PERSONALDATA".localized(), subtitle: "Өңдеу"),
-        SettingsItem(type: .arrow, title: "CHANGEPASSWORD".localized()),
-        SettingsItem(type: .arrow, title: "LANGUAGE".localized(), subtitle: "CURRENTLANG".localized()),
-        SettingsItem(type: .arrow, title: "RULES".localized(), subtitle: "Өңдеу"),
-        SettingsItem(type: .option, title: "NOTIFICATION".localized()),
-        SettingsItem(type: .option, title: "DARKMODE".localized()),
-    ]
+        tableview.reloadData()
     }
     
     func configureViews() {
         myProfileLabel.text = "MY_PROFILE".localized()
+        settingsItems = [
+            SettingsItem(type: .arrow, title: "PERSONALDATA".localized(), subtitle: "Өңдеу"),
+            SettingsItem(type: .arrow, title: "CHANGEPASSWORD".localized()),
+            SettingsItem(type: .arrow, title: "LANGUAGE".localized(), subtitle: "CURRENTLANG".localized()),
+            SettingsItem(type: .arrow, title: "RULES".localized()),
+            SettingsItem(type: .option, title: "NOTIFICATION".localized()),
+            SettingsItem(type: .option, title: "DARKMODE".localized()),
+        ]
     }
 }
 
