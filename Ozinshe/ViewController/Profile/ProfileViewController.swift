@@ -8,15 +8,6 @@
 import UIKit
 import Localize_Swift
 
-/*
- "PERSONALDATA" = "Личные данные";
- "CHANGEPASSWORD" = "Поменять пароль";
- "RULES" = "Правила";
- "NOTIFICATION" = "Уведомление";
- "DARKMODE" = "Темный режим";
- "CURRENTLANG" = "Русский";
- */
-
 class ProfileViewController: UIViewController, LanguageProtocol {
     
     @IBOutlet weak var exitButton: UIBarButtonItem!
@@ -106,7 +97,6 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
             languageVC.modalPresentationStyle = .overFullScreen
             present(languageVC, animated: true)
             languageVC.delegate = self
-            print("Lang tapped")
         case 4:
             print("rules tapped")
         case 5:

@@ -53,7 +53,7 @@ class SigninViewController: UIViewController {
                 
                 if let token = json["accessToken"].string {
                     Storage.sharedInstance.accessToken = token
-                    UserDefaults.standard.set(token, forKey: "access token")
+                    UserDefaults.standard.set(token, forKey: "accessToken")
                     self.startApp()
                 } else {
                     SVProgressHUD.showError(withStatus: "CONNECTION_ERROR")
