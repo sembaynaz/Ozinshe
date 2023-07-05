@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Ozinshe
+
+  Created by Nazerke Sembay on 04.07.2023.
+  
+*/
+"MY_PROFILE" = "Мой профиль";
+"LANGUAGE" = "Язык";
+//"ARROWSETTINGSTITLE" = ["Личные данные", "Поменять пароль", "Язык", "Правила";
+//"ARROWSETTINGSDESC" = ["", "Русский"];
+//"SWITCHSETTINGS" = ["Уведомление", "Темный режим"];
+"PERSONALDATA" = "Личные данные";
+"CHANGEPASSWORD" = "Поменять пароль";
+"RULES" = "Правила";
+"NOTIFICATION" = "Уведомление";
+"DARKMODE" = "Темный режим";
+"CURRENTLANG" = "Русский";

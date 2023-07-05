@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Ozinshe
+
+  Created by Nazerke Sembay on 04.07.2023.
+  
+*/
+"MY_PROFILE" = "Менің профилім";
+"LANGUAGE" = "Тіл";
+//"ARROWSETTINGS" = ["Жеке деректер", "Құпия сөзді өзгерту", "Тіл", "Ережелер мен шарттар"];
+//"ARROWSETTINGSDESC" = ["", "Қазақша"];
+//"SWITCHSETTINGS" = ["Хабарландырулар", "Қараңғы режим"];
+"PERSONALDATA" = "Жеке деректер";
+"CHANGEPASSWORD" = "Құпия сөзді өзгерту";
+"RULES" = "Ережелер мен шарттар";
+"NOTIFICATION" = "Хабарландырулар";
+"DARKMODE" = "Қараңғы режим";
+"CURRENTLANG" = "Қазақша";

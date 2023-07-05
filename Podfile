@@ -10,6 +10,7 @@ target 'Ozinshe' do
   pod 'SwiftyJSON'
   pod 'SDWebImage'
   pod 'SVProgressHUD'
+  pod 'Localize-Swift'
 
   target 'OzinsheTests' do
     inherit! :search_paths

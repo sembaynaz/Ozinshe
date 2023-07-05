@@ -70,7 +70,7 @@ class SigninViewController: UIViewController {
     }
     
     func startApp() {
-        let tabViewController = self.storyboard?.instantiateViewController(withIdentifier: "TabBarController")
+        let tabViewController = self.storyboard?.instantiateViewController(withIdentifier: "TabBarViewController")
         tabViewController?.modalPresentationStyle = .fullScreen
         self.present(tabViewController!, animated: true)
     }
