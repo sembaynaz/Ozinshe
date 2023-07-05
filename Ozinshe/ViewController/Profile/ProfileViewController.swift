@@ -89,7 +89,9 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         
         switch cellNumber {
         case 1:
-            print("Data tapped")
+            let dataVC = storyboard?.instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
+            dataVC.modalPresentationStyle = .overFullScreen
+            present(dataVC, animated: true)
         case 2:
             print("PassChange tapped")
         case 3:
