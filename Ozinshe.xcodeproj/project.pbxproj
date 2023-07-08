@@ -32,6 +32,7 @@
 		6F8279452A55F07B0035EFE0 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8279442A55F07B0035EFE0 /* ChangePasswordViewController.swift */; };
 		6FB566E12A4F04A6008E0FB9 /* FavoriteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB566E02A4F04A6008E0FB9 /* FavoriteTableViewController.swift */; };
 		6FB566E32A4F0591008E0FB9 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB566E22A4F0591008E0FB9 /* Movie.swift */; };
+		6FDB29BE2A59AF43009E1028 /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FDB29BD2A59AF43009E1028 /* FavoriteTableViewCell.swift */; };
 		6FE9FA7A2A337B0000044507 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE9FA792A337B0000044507 /* OnboardingViewController.swift */; };
 		6FE9FA7C2A337C1B00044507 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE9FA7B2A337C1B00044507 /* OnboardingCollectionViewCell.swift */; };
 		6FE9FA7F2A344A1D00044507 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE9FA7E2A344A1D00044507 /* OnboardingSlide.swift */; };
@@ -95,6 +96,7 @@
 		6F8279442A55F07B0035EFE0 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		6FB566E02A4F04A6008E0FB9 /* FavoriteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewController.swift; sourceTree = "<group>"; };
 		6FB566E22A4F0591008E0FB9 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		6FDB29BD2A59AF43009E1028 /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		6FE9FA792A337B0000044507 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		6FE9FA7B2A337C1B00044507 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		6FE9FA7E2A344A1D00044507 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
@@ -257,6 +259,15 @@
 			path = OzinsheUITests;
 			sourceTree = "<group>";
 		};
+		6FDB29BF2A59BC87009E1028 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				6FB566E02A4F04A6008E0FB9 /* FavoriteTableViewController.swift */,
+				6FDB29BD2A59AF43009E1028 /* FavoriteTableViewCell.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
 		6FE9FA752A337A2F00044507 /* Applications */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,12 +280,12 @@
 		6FE9FA762A337A4F00044507 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				6FDB29BF2A59BC87009E1028 /* Favorites */,
+				6FE9FA782A337AAB00044507 /* Onboarding */,
 				6F63207D2A4AFEBF00316D11 /* Profile */,
 				6F63207A2A4AE5BB00316D11 /* TabBar */,
 				6F10BACB2A39AD6D00E77E29 /* SigninViewController.swift */,
 				6FEEBA2A2A3B1E79000C8FD3 /* SignupViewController.swift */,
-				6FE9FA782A337AAB00044507 /* Onboarding */,
-				6FB566E02A4F04A6008E0FB9 /* FavoriteTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -584,6 +595,7 @@
 				6FE9FA7A2A337B0000044507 /* OnboardingViewController.swift in Sources */,
 				6F8279452A55F07B0035EFE0 /* ChangePasswordViewController.swift in Sources */,
 				6F805DBD2A4DCE0C009BAEF4 /* LogoutViewController.swift in Sources */,
+				6FDB29BE2A59AF43009E1028 /* FavoriteTableViewCell.swift in Sources */,
 				6F6E10632A31038A00F2921E /* SceneDelegate.swift in Sources */,
 				6F805DB92A4DCA5C009BAEF4 /* EditProfileViewController.swift in Sources */,
 				6FB566E32A4F0591008E0FB9 /* Movie.swift in Sources */,

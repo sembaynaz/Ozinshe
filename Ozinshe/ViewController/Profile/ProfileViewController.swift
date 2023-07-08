@@ -90,11 +90,8 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         switch cellNumber {
         case 1:
             let dataVC = storyboard?.instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
-//            dataVC.modalPresentationStyle = .overFullScreen
-//            present(dataVC, animated: true)
             show(dataVC, sender: true)
         case 2:
-            //ChangePasswordViewController
             let changePass = storyboard?.instantiateViewController(withIdentifier: "ChangePasswordViewController") as! ChangePasswordViewController
             show(changePass, sender: true)
         case 3:
