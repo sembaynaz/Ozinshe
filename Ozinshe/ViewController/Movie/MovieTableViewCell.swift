@@ -8,7 +8,7 @@
 import UIKit
 import SDWebImage
 
-class FavoriteTableViewCell: UITableViewCell {
+class MovieTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
@@ -29,8 +29,11 @@ class FavoriteTableViewCell: UITableViewCell {
     func setData(movie: Movie){
         nameLabel.text = movie.name
         yearLabel.text = String(movie.year)
-        genreLabel.text = movie.genres
+//        genreLabel.text = movie.genres
         categoriesLabel.text = movie.categories
         posterImage.sd_setImage(with: URL(string: movie.poster_link), completed: nil)
+        for item in movie.genres {
+            genreLabel.text = item.name
+        }
     }
 }
